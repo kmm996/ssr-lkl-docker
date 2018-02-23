@@ -16,7 +16,7 @@ ENV METHOD="chacha20"
 ENV PROTOCOL="auth_aes128_md5"
 ENV OBFS="tls1.2_ticket_auth"
 
-RUN git clone https://github.com/shadowsocksr/shadowsocksr.git \
+RUN git clone -b manyuser https://github.com/shadowsocksr-backup/shadowsocksr.git \
     && cd shadowsocksr \
     && bash initcfg.sh \
     && sed -i 's/sspanelv2/mudbjson/' userapiconfig.py \
