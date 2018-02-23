@@ -29,3 +29,4 @@ RUN chmod a+x /root/liblkl-hijack.so /root/start.sh
 WORKDIR /shadowsocksr
 ENTRYPOINT ["/root/start.sh"]
 CMD /root/start.sh
+EXPOSE 443
